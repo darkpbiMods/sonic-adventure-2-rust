@@ -1,0 +1,18 @@
+[package]
+autobins = false
+name = "sa2-runtime"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+
+[features]
+reference-tests = []
+
+[[bin]]
+name = "prepare-animation-bundle"
+path = "tools/prepare_animation_bundle.rs"
